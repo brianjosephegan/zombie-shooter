@@ -25,7 +25,7 @@ public class EnemyAI : MonoBehaviour
 
         if (isProvoked)
         {
-            navMeshAgent.SetDestination(targetTransform.position);
+            EngageTarget();
         }
         else if (distanceToTarget <= chaseRange)
         {
@@ -37,5 +37,11 @@ public class EnemyAI : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
+    }
+
+    private void EngageTarget()
+    {
+        GetComponent<Animator>().SetTrigger("Walk");
+        navMeshAgent.SetDestination(targetTransform.position);
     }
 }
