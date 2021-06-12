@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
         if (hitPoints <= 0)
         {
             Debug.Log("Aaaaah! The Zombie's got you.");
+            GetComponent<PlayerDeath>().HandleDeath();
         }
     }
 }
