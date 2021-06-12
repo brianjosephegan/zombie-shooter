@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 3845901224015082663}
   - component: {fileID: 3845901224007521383}
   - component: {fileID: 3845901224009736739}
+  - component: {fileID: 248818856}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -199,6 +200,19 @@ MonoBehaviour:
     slowDownRate: 20
     airControl: 0
     shellOffset: 0
+--- !u!114 &248818856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3845901224020498369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea82609553c6e542bd00b6aa548e27f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 100
 --- !u!1 &3845901224020498371
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,6 +401,7 @@ MonoBehaviour:
   - {fileID: 3845901222590183392}
   muzzleFlashTime: 0.05
   range: 100
+  damage: 50
 --- !u!1001 &3845901222358426908
 PrefabInstance:
   m_ObjectHideFlags: 0
