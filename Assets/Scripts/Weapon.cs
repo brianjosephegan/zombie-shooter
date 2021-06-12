@@ -25,6 +25,7 @@ public class Weapon : MonoBehaviour
         RaycastHit raycastHit;
         if (Physics.Raycast(fpCamera.transform.position, fpCamera.transform.forward, out raycastHit, range))
         {
+            Debug.Log(raycastHit.transform.name);
             PlayHitEffect(raycastHit);
         }
     }
