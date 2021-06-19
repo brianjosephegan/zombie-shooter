@@ -765,6 +765,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &872867652 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3845901224018990567, guid: 580961333f529404ab4344ae2081c874,
+    type: 3}
+  m_PrefabInstance: {fileID: 3845901222442187615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &926192933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,6 +1473,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1503134505}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1941638191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3845901222928279069, guid: 580961333f529404ab4344ae2081c874,
+    type: 3}
+  m_PrefabInstance: {fileID: 3845901222442187615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1941638194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941638191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a49b2f27377964d8a5d59b0ffdacc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpCamera: {fileID: 872867652}
+  zoomedOutFOV: 60
+  zoomedInFOV: 20
+  zoomedOutSensitivity: 2
+  zoomedInSensitivity: 0.5
 --- !u!1 &1962487188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1872,12 +1901,22 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 1962487192}
+    - target: {fileID: 72727895281107391, guid: 580961333f529404ab4344ae2081c874,
+        type: 3}
+      propertyPath: m_Name
+      value: Muzzle Flash
+      objectReference: {fileID: 0}
     - target: {fileID: 3845901224007521383, guid: 580961333f529404ab4344ae2081c874,
         type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1,
         type: 2}
+    - target: {fileID: 3845901224018990567, guid: 580961333f529404ab4344ae2081c874,
+        type: 3}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3845901224020498369, guid: 580961333f529404ab4344ae2081c874,
         type: 3}
       propertyPath: m_Name
@@ -1937,6 +1976,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144931262981354139, guid: 580961333f529404ab4344ae2081c874,
+        type: 3}
+      propertyPath: m_Name
+      value: Muzzle Flash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 580961333f529404ab4344ae2081c874, type: 3}
