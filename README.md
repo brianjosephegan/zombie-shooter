@@ -1,2 +1,2 @@
 # zombie-shooter
- A zombie shooter. Made with Unity!
+ A zombie shooter. Made with Unity.
